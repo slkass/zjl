@@ -233,7 +233,7 @@ window.boot = function () {
 
 // main.js is qqplay and jsb platform entry file, so we must leave platform init code here
 if (false) {
-  BK.Script.loadlib('GameRes:https://cdn.jsdelivr.net/gh/Slackboi/wjkpintu/src/settings.min.js');
+  BK.Script.loadlib('GameRes:https://cdn.jsdelivr.net/gh/Slackboi/wjkpintu/src/settings.js');
   BK.Script.loadlib();
   BK.Script.loadlib('GameRes://libs/qqplay-downloader.js');
 
@@ -262,7 +262,7 @@ if (false) {
     require('jsb-adapter/engine/index.js');
   } else {
     require('https://cdn.jsdelivr.net/gh/Slackboi/wjkpintu/src/settings.min.js');
-    require('https://cdn.jsdelivr.net/gh/Slackboi/wjkpintu/src/cocos2d-jsb.min.js');
+    require('https://cdn.jsdelivr.net/gh/Slackboi/wjkpintu/src/cocos2d-jsb.js');
     require('jsb-adapter/jsb-engine.js');
   }
 
