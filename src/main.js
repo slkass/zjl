@@ -221,7 +221,7 @@ window.boot = function () {
   // 初始化资源
   cc.AssetLibrary.init({
     libraryPath: 'https://cdn.jsdelivr.net/gh/Slackboi/zjl/res/import',
-    rawAssetsBase: 'https://cdn.jsdelivr.net/gh/Slackboi/zjl/res/raw-',
+    rawAssetsBase: './res/raw-',
     rawAssets: settings.rawAssets,
     packedAssets: settings.packedAssets,
     md5AssetsMap: settings.md5AssetsMap,
