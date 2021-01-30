@@ -260,12 +260,12 @@ if (false) {
 <<<<<<< HEAD
     require('https://cdn.jsdelivr.net/gh/Slackboi/wjkpintu/src/settings.js');
 =======
-    require('https://cdn.jsdelivr.net/gh/Slackboi/wjkpintu/src/settings.min.js');
+    require('https://cdn.jsdelivr.net/gh/Slackboi/wjkpintu/src/settings');
 >>>>>>> 82d0ff7218bd8f84588749e9dc7baf2cd5b52c3d
     require('https://cdn.jsdelivr.net/gh/Slackboi/wjkpintu/src/cocos2d-runtime.min.js');
     require('jsb-adapter/engine/index.js');
   } else {
-    require('https://cdn.jsdelivr.net/gh/Slackboi/wjkpintu/src/settings.min.js');
+    require('https://cdn.jsdelivr.net/gh/Slackboi/wjkpintu/src/settings');
     require('https://cdn.jsdelivr.net/gh/Slackboi/wjkpintu/src/cocos2d-jsb.js');
     require('jsb-adapter/jsb-engine.js');
   }
