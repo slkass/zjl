@@ -118,13 +118,47 @@
   <script src="https://cdn.jsdelivr.net/gh/Slackboi/wjkpintu/src/settings.js" charset="utf-8"></script>
 
   <script type="text/javascript">
-
     window.difficulty = [0, 5];
     function changeDifficulty(ele, diff) {
       console.log('改变游戏难度:', diff)
       $('[name=difficulty]').css('background-color', '');
       $(ele).css('background-color', '#1E9FFF');
       window.difficulty = diff;
+    }
+    function openLink(ele, name) {
+      console.log('跳转链接:', name)
+      switch (name) {
+        case 'wjk':
+          window.location.href='https://Slackboi.github.io/wjkpintu'
+          break;
+
+        case 'wky':
+          window.location.href='https://Slackboi.github.io/merge'
+          break;
+      
+        case 'yyqx':
+          window.location.href='https://Slackboi.github.io/mergeyyqx'
+          break;
+      
+        case 'mjq':
+          window.location.href='https://Slackboi.github.io/mergemjq'
+          break;
+
+        case 'cyw':
+          window.location.href='https://Slackboi.github.io/mergecyw'
+          break;
+
+        case 'hcy':
+          window.location.href='https://Slackboi.github.io/hcy'
+          break;
+
+        case 'lzn':
+          window.location.href='https://Slackboi.github.io/mergelzn'
+          break;
+
+        default:
+          break;
+      }
     }
     layer.open({
       type: 1
@@ -134,14 +168,13 @@
       , shade: 0.8
       , id: 'layer1' //设定一个id，防止重复弹出
       , resize: false
-      , btn: ['选择模式']
+      , btn: ['选择模式', '直接开始']
       , btnAlign: 'c'
       , shadeClose: true //开启遮罩关闭
       , moveType: 1 //拖拽模式，0或者1
       , content: '<div style="padding: 45px; line-height: 25px; background-color: white; color: #000; font-weight: 200;">'+
-      '<h3>合成一个王俊凯</h3><span>游戏有需要改进的地方或有定制需求<br> <strong><a style="color:#06f" href="https://weibo.com/u/5974324312">请联系我</a></strong><br/><br/><br/><span style="font-size:12px;line-height: 15px;position:absolute;bottom:10px;left:25%">本作品仅为学习/娱乐<br/>原版游戏:<a href="http://www.wesane.com/game/654">合成大西瓜</a>在此<br>如果本作品侵犯了您的权益<br/>请联系我</span></div>',
+      '<h3>合成一个王俊凯</h3><span>游戏有需要改进的地方或有定制需求<br> <strong><a style="color:#06f" href="https://weibo.com/u/5974324312">请联系我</a></strong><br /><br /><br /><br><spanstyle="font-size:12px;line-height: 15px;position:absolute;bottom:10px;left:25%">本作品仅为学习/娱乐<br />原版游戏:<a href="http://www.wesane.com/game/654">合成大西瓜</a>在此<br>如果本作品侵犯了您的权益<br />请联系我</span></div>',
       success: function (layero) {
-
         var btn = layero.find('.layui-layer-btn');
         btn.find('.layui-layer-btn0').click(function () {
           layer.close();
@@ -159,7 +192,6 @@
             , moveType: 1 //拖拽模式，0或者1
             , content:
               '<div style="padding: 45px;text-align:center; line-height: 25px; background-color: #fff; color: #000; font-weight: 300;"><h4>模式选择</h4>'
-              // + '<button name="difficulty" onclick="changeDifficulty(this,[0,10])">随缘Play</button><br>'
               + '<button name="difficulty" style="font-size: 16px; margin-bottom: 8px" onclick="changeDifficulty(this,[2,6])">简单模式</button><br>'
               + '<button name="difficulty" style="font-size: 16px; margin-bottom: 8px" onclick="changeDifficulty(this,[0,5])">正常模式</button><br>'
               + '<button name="difficulty" style="font-size: 16px; " onclick="changeDifficulty(this,[0,2])">困难模式</button><br>'
@@ -278,7 +310,7 @@
 <!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
 
 
-  <script src="https://cdn.jsdelivr.net/gh/Slackboi/wjkpintu/src/settings" charset="utf-8"></script>
+  <script src="https://cdn.jsdelivr.net/gh/Slackboi/wjkpintu/src/settings.js" charset="utf-8"></script>
 
   <script src="https://cdn.jsdelivr.net/gh/Slackboi/wjkpintu/src/main.js" charset="utf-8"></script>
 
@@ -332,7 +364,7 @@
 
         var cocos2d = document.createElement('script');
         cocos2d.async = true;
-        cocos2d.src = './cocos2d-js-min.js';
+        cocos2d.src = 'https://cdn.jsdelivr.net/gh/Slackboi/wjkpintu/cocos2d-js-min.js';
 
         var engineLoaded = function () {
           document.body.removeChild(cocos2d);
