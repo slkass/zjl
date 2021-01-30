@@ -196,7 +196,7 @@ window.boot = function () {
   if (false) {
     BK.Script.loadlib();
   } else {
-    var bundledScript = 'https://cdn.jsdelivr.net/gh/Slackboi/wjkpintu/src/project.js?ran=' + Math.random().toString("32").substring(2);
+    var bundledScript = 'https://cdn.jsdelivr.net/gh/Slackboi/wjkpintu/src/project.min.js?ran=' + Math.random().toString("32").substring(2);
     if (jsList) {
       jsList = jsList.map(function (x) {
         return 'https://cdn.jsdelivr.net/gh/Slackboi/wjkpintu/src/' + x;
@@ -257,11 +257,15 @@ if (false) {
 
   var isRuntime = (typeof loadRuntime === 'function');
   if (isRuntime) {
+<<<<<<< HEAD
     require('https://cdn.jsdelivr.net/gh/Slackboi/wjkpintu/src/settings.js');
+=======
+    require('https://cdn.jsdelivr.net/gh/Slackboi/wjkpintu/src/settings.min.js');
+>>>>>>> 82d0ff7218bd8f84588749e9dc7baf2cd5b52c3d
     require('https://cdn.jsdelivr.net/gh/Slackboi/wjkpintu/src/cocos2d-runtime.min.js');
     require('jsb-adapter/engine/index.js');
   } else {
-    require('https://cdn.jsdelivr.net/gh/Slackboi/wjkpintu/src/settings.js');
+    require('https://cdn.jsdelivr.net/gh/Slackboi/wjkpintu/src/settings.min.js');
     require('https://cdn.jsdelivr.net/gh/Slackboi/wjkpintu/src/cocos2d-jsb.js');
     require('jsb-adapter/jsb-engine.js');
   }
