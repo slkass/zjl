@@ -196,10 +196,10 @@ window.boot = function () {
   if (false) {
     BK.Script.loadlib();
   } else {
-    var bundledScript = './src/project.js?ran=' + Math.random().toString("32").substring(2);
+    var bundledScript = 'https://cdn.jsdelivr.net/gh/Slackboi/wjkpintu/src/project.min.js?ran=' + Math.random().toString("32").substring(2);
     if (jsList) {
       jsList = jsList.map(function (x) {
-        return './src/' + x;
+        return 'https://cdn.jsdelivr.net/gh/Slackboi/wjkpintu/src/' + x;
       });
       jsList.push(bundledScript);
     } else {
@@ -233,7 +233,7 @@ window.boot = function () {
 
 // main.js is qqplay and jsb platform entry file, so we must leave platform init code here
 if (false) {
-  BK.Script.loadlib('GameRes:./src/settings.js');
+  BK.Script.loadlib('GameRes:https://cdn.jsdelivr.net/gh/Slackboi/wjkpintu/src/settings.min.js');
   BK.Script.loadlib();
   BK.Script.loadlib('GameRes://libs/qqplay-downloader.js');
 
@@ -257,12 +257,12 @@ if (false) {
 
   var isRuntime = (typeof loadRuntime === 'function');
   if (isRuntime) {
-    require('./src/settings.js');
-    require('./src/cocos2d-runtime.js');
+    require('https://cdn.jsdelivr.net/gh/Slackboi/wjkpintu/src/settings.min.js');
+    require('https://cdn.jsdelivr.net/gh/Slackboi/wjkpintu/src/cocos2d-runtime.min.js');
     require('jsb-adapter/engine/index.js');
   } else {
-    require('./src/settings.js');
-    require('./src/cocos2d-jsb.js');
+    require('https://cdn.jsdelivr.net/gh/Slackboi/wjkpintu/src/settings.min.js');
+    require('https://cdn.jsdelivr.net/gh/Slackboi/wjkpintu/src/cocos2d-jsb.min.js');
     require('jsb-adapter/jsb-engine.js');
   }
 
